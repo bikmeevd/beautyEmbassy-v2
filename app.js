@@ -29,3 +29,34 @@ document.querySelectorAll("a.scroll").forEach((anchor) => {
     });
   });
 });
+
+function applyChanges() {
+  var windowWidth = $(window).width();
+  var elem = document.getElementsByClassName("hero-cont")[0];
+
+  $(".enroll").toggle(windowWidth > 991);
+
+  $(".video-wrapper, .small-picture").toggle(windowWidth > 767);
+
+  if (windowWidth > 576) {
+    $(".container-fluid")
+      .removeClass("container-fluid text-center")
+      .addClass("container");
+    $(".div-margin").removeClass("div-margin").addClass("div-padd");
+    $(".foot").removeClass("container-fluid").addClass("container text-center");
+    $(".about-cont")
+      .removeClass("container")
+      .addClass("container-fluid text-center");
+    if ($(elem).hasClass("container")) {
+      $(elem).removeClass("container").addClass("container-fluid text-center");
+    }
+  } else {
+    $(".container")
+      .removeClass("container")
+      .addClass("container-fluid text-center");
+    $(".div-padd").removeClass("div-padd").addClass("div-margin");
+  }
+}
+
+// Apply changes on page load and resize
+$(window).on("load resize", applyChanges);

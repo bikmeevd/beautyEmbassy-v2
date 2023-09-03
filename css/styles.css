@@ -5,7 +5,9 @@ html {font-size: 100%;} /*16px*/
 #hero h1, #hero p {
     color: white;
 }
-
+.div-margin {
+    margin: 6% 0;
+}
 body {
 
   font-family: 'Lexend', sans-serif;
@@ -47,6 +49,8 @@ h5 {font-size: 1.25rem;}
 
 
 small, .text_small {font-size: 0.8rem;}
+
+
 
 .content-wrapper-center {
     background-color: white;
@@ -219,6 +223,9 @@ video {
     color: #8f7d6b;
     font-weight: 300;
 }
+.link-text {
+    margin-left: 2%;
+}
 .p-icons {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
@@ -227,3 +234,28 @@ video {
     font-size: 1.563rem;
 }
 
+@media (max-width: 991px) {
+    #price span, #price p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 785px) {
+    .two-items-wrapper {
+        display: block;
+        align-items: initial;
+        justify-content: initial;
+        position: static;
+    }
+
+    .text-wrapper {
+        position: static;
+        top: initial;
+        left: initial;
+        transform: initial;
+        text-align: center;
+        background-color: white;
+        width: 100%;
+    }
+}
