@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
     <title>Beauty Embassy | Professional beauty salon in Prague</title>
-    <link rel="alternate" hreflang="en" href="http://127.0.0.1:5500/en/" />
+    <link rel="alternate" hreflang="en" href="./en/" />
     <meta
       name="title"
       content="Beauty Embassy | Professional beauty salon in Prague"
@@ -142,7 +142,7 @@
   <body>
     <header class="container">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="/"
+        <a class="navbar-brand" href="/en/"
           ><img
             src="../images/beautyEmbassyLogo.png"
             width="100"
@@ -166,7 +166,7 @@
               <a
                 class="scroll nav-link px-4"
                 href="#about"
-                aria-label="Sekce O nás"
+                aria-label="About section"
                 data-section="about"
                 >About</a
               >
@@ -175,7 +175,7 @@
               <a
                 class="scroll nav-link px-4"
                 href="#price"
-                aria-label="Sekce ceny"
+                aria-label="Price section"
                 data-section="price"
                 >Price</a
               >
@@ -184,7 +184,7 @@
               <a
                 class="scroll nav-link px-4"
                 href="#gallery"
-                aria-label="Sekce galerie"
+                aria-label="Gallery section"
                 data-section="gallery"
                 >Gallery</a
               >
@@ -193,15 +193,28 @@
               <a
                 class="scroll nav-link px-4"
                 href="#contacts"
-                aria-label="Sekce kontakty"
+                aria-label="Contacts section"
                 data-section="contacts"
                 >Contacts</a
               >
             </li>
             <li class="nav-item nav-link">
               <div id="lang-switcher" class="lang-switcher px-4">
-                <a href="./" class="lang-option" lang="cs">CZ</a> |
-                <a href="./en" class="lang-option" lang="en">EN</a>
+                <a
+                  href="../"
+                  class="lang-option"
+                  lang="cs"
+                  aria-label="Switch to Czech version of the site"
+                  >CZ</a
+                >
+                |
+                <a
+                  href="/en/"
+                  class="lang-option"
+                  lang="en"
+                  aria-label="Switch to English version of the site"
+                  >EN</a
+                >
               </div>
             </li>
             <li class="nav-item">
@@ -210,7 +223,7 @@
                 href="https://b805904.alteg.io/select-city/589/select-branch?previousStepUrl=%2Fcompany%2F753809%2Fmenu%3Fo%3D&o="
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="Online objednání"
+                aria-label="Enroll online"
                 >ENROLL ONLINE</a
               >
             </li>
@@ -219,7 +232,7 @@
       </nav>
     </header>
     <section id="hero" role="banner">
-      <div id="hr" class="container-fluid text-center hero-cont">
+      <div id="hr" class="text-center hero-cont">
         <div
           class="hero-background d-flex align-items-center justify-content-center"
         >
@@ -825,13 +838,6 @@
       <div class="container div-padd">
         <div class="row row-gap-3">
           <div class="col-md-6 col-sm-12 col-lg-6">
-            <img
-              class="img-fluid"
-              src="../images/content/owner.webp"
-              alt="Owner of Beauty Embassy"
-            />
-          </div>
-          <div class="col-md-6 col-sm-12 col-lg-6">
             <h4>Love</h4>
             <h2>Our philosophy</h2>
 
@@ -857,6 +863,13 @@
               <p>Ekaterina Bikmeeva</p>
               <span>Beauty Embassy Owner</span>
             </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-lg-6">
+            <img
+              class="img-fluid"
+              src="../images/content/owner.webp"
+              alt="Owner of Beauty Embassy"
+            />
           </div>
 
           <div class="col-md-6 col-sm-12 col-lg-6">
@@ -897,7 +910,8 @@
                     class="fa-solid fa-mobile-screen fa-3x d-inline"
                     style="color: #bba18e"
                     ><span class="p-icons d-inline link-text">
-                      +420 777 000 820 Milady Horákové 685/14
+                      +420 777 000 820 <br />
+                      Milady Horákové 685/14
                     </span></i
                   ></a
                 >
@@ -908,7 +922,8 @@
                     class="fa-solid fa-mobile-screen fa-3x d-inline"
                     style="color: #bba18e"
                     ><span class="p-icons d-inline link-text">
-                      +420 777 502 820 Veverkova 9
+                      +420 777 502 820 <br />
+                      Veverkova 9
                     </span></i
                   ></a
                 >
@@ -921,10 +936,10 @@
     <footer>
       <div class="container text-center foot">
         <h2 class="visually-hidden">Footer Navigation</h2>
-        <h3>
+        <h5>
           Caring for you is our happiness, inspiration and motivation to
           continue!
-        </h3>
+        </h5>
         <p>&copy; 2019 - today. Beauty Embassy. All rights reserved.</p>
       </div>
     </footer>

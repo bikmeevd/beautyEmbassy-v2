@@ -238,10 +238,10 @@ video {
     #price span, #price p {
         font-size: 0.8rem;
     }
-
+    
 }
 
-@media (max-width: 785px) {
+@media (max-width: 796px) {
     .two-items-wrapper {
         display: block;
         align-items: initial;

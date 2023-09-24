@@ -36,7 +36,7 @@ function applyChanges() {
 
   $(".enroll").toggle(windowWidth > 991);
 
-  $(".video-wrapper, .small-picture").toggle(windowWidth > 767);
+  $(".video-wrapper, .small-picture, .about-h3").toggle(windowWidth > 796);
 
   if (windowWidth > 576) {
     $(".container-fluid")
